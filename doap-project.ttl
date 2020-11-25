@@ -1,1 +1,29 @@
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix asf: <http://projects.apache.org/ns/asfext#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
 
+<https://w3id.org/umids/project/food-claims-kg>
+  a doap:Project ;
+  doap:name " food-claims-kg" ;
+  doap:description '''A RDF knowledge graph for food health claims.''' ;
+  bibo:status "Active" ;
+
+  doap:programming-language "Python" ;
+  doap:license <https://github.com/MaastrichtU-IDS/food-claims-kg/blob/master/LICENSE> ;
+  doap:bug-database <https://github.com/MaastrichtU-IDS/food-claims-kg/issues> ;
+  doap:homepage <http://grlc.io/api-git/MaastrichtU-IDS/food-claims-kg> ;
+  doap:wiki <https://github.com/MaastrichtU-IDS/food-claims-kg> ;
+  doap:download-page <https://github.com/MaastrichtU-IDS/food-claims-kg> ;
+  doap:service-endpoint <https://graphdb.dumontierlab.com/repositories/FoodHealthClaimsKG> ;
+  
+  doap:category "Research" ;
+  doap:repository [
+    a doap:GitRepository ;
+    doap:location <https://github.com/MaastrichtU-IDS/food-claims-kg> ;
+  ] ;
+  doap:maintainer [
+    a foaf:Person ;
+    foaf:name "Remzi Celebi, Vincent Emonet" ;
+    foaf:mbox <mailto:remzi.celebi@maastrichtuniversity.nl, vincent.emonet@gmail.com>
+  ] .
